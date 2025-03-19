@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+@font-face {
+  font-family: 'NuHanafudaya';
+  src: url('fonts/NuHanafudaya-Regular-v1.0.1.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SEGA';
+  src: url('fonts/SEGA.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'WiiSans';
+  src: url('fonts/WiiSans-Regular-4.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MUNDONICK';
+  src: url('fonts/MUNDONICK.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GameBoy';
+  src: url('fonts/game_boy_1989.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SuperMarioMaker2';
+  src: url('fonts/super-mario-maker-2.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'KrabbyPatty';
+  src: url('Krabby Patty.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FamilyGuy';
+  src: url('FamilyGuy-4grW.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pokemon';
+  src: url('Pokemon Solid.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AngryBirds';
+  src: url('angrybirds-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Omori';
+  src: url('OMORI_GAME.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Weezer';
+  src: url('weezerfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pepsi';
+  src: url('PEPSI_pl.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SEGA';
+  src: url('fonts/SEGA.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Walter';
+  src: url('Walter-zrol.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DisneyChannel';
+  src: url('DisneyChannel-eLze.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PeaceSans';
+  src: url('Peace Sans Webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Allan';
+  src: url('Allan-Regular.ttf') format('truetype');
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.controls > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls label {
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.controls input[type="text"],
+.controls input[type="number"],
+.controls select,
+.controls input[type="color"] {
+  width: 100%;
+  max-width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.preview {
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 0;
+  text-stroke-color: transparent;
+  text-stroke-width: 0;
+  font-size: 32px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 80%;
+  text-align: center;
+  cursor: text;
+  outline: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  -webkit-user-modify: read-write;
+  -moz-user-modify: read-write;
+  -ms-user-modify: read-write;
+  user-modify: read-write;
+}
+
+.preview:focus {
+  border-color: #666;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.template-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-screen button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'NuHanafudaya';
+  position: relative;
+}
+
+.start-screen button:hover {
+  background-color: #f0f0f0;
+}
+
+.template-preview {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+#sega-template .template-preview {
+  font-family: 'SEGA';
+}
+
+#back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+#back-button:hover {
+  background-color: #f0f0f0;
+}
+
+#download-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+#download-button:hover {
+  background-color: #f0f0f0;
+}
+
+body *:not(.preview) {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-modify: read-only;
+  -moz-user-modify: read-only;
+  -ms-user-modify: read-only;
+  user-modify: read-only;
+}
+
+/* Add some responsive styling */
+@media (max-width: 600px) {
+  .preview {
+    width: 95%;
+    font-size: 24px;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .template-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
