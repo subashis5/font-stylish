@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="start-screen" id="start-screen">
+    <h1>Choose a Logo</h1>
+    <div class="template-grid">
+      <button id="nintendo-template"></button>
+      <button id="sega-template"></button>
+      <button id="wii-template"></button>
+      <button id="adult-swim-template"></button>
+      <button id="nickelodeon-template"></button>
+      <button id="gameboy-template"></button>
+      <button id="super-mario-maker-template"></button>
+      <button id="spongebob-template"></button>
+      <button id="family-guy-template"></button>
+      <button id="pokemon-template"></button>
+      <button id="omori-template"></button>
+      <button id="angry-birds-template"></button>
+      <button id="weezer-template"></button>
+      <button id="pepsi-template"></button>
+      <button id="disney-template"></button>
+      <button id="disney-channel-template"></button>
+      <button id="toy-story-template"></button>
+      <button id="incredibox-template"></button>
+    </div>
+  </div>
+
+  <div class="controls" id="controls" style="display: none;">
+    <label for="font-select">Font:</label>
+    <select id="font-select">
+      <option value="Arial">Arial</option>
+      <option value="NuHanafudaya">NuHanafudaya</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+      <option value="SEGA">SEGA</option>
+      <option value="WiiSans">WiiSans</option>
+      <option value="HelveticaNeue">HelveticaNeue</option>
+      <option value="MUNDONICK">MUNDONICK</option>
+      <option value="Impact">Impact</option>
+      <option value="Comic Sans MS">Comic Sans MS</option>
+      <option value="GameBoy">GameBoy</option>
+      <option value="SuperMarioMaker2">SuperMarioMaker2</option>
+      <option value="KrabbyPatty">KrabbyPatty</option>
+      <option value="FamilyGuy">Family Guy</option>
+      <option value="Pokemon">!Pokemon</option>
+      <option value="Omori">Omori</option>
+      <option value="AngryBirds">Angry Birds</option>
+      <option value="Weezer">Weezer</option>
+      <option value="Pepsi">Pepsi</option>
+      <option value="Walter">Walter</option>
+      <option value="DisneyChannel">Disney Channel</option>
+      <option value="PeaceSans">Peace Sans</option>
+      <option value="Allan">Allan</option>
+    </select>
+
+    <label for="size-input">Size (px):</label>
+    <input type="number" id="size-input" value="32">
+
+    <label for="color-input">Color:</label>
+    <input type="color" id="color-input" value="#000000">
+
+    <label for="stroke-color-input">Stroke Color:</label>
+    <input type="color" id="stroke-color-input" value="#000000">
+
+    <label for="stroke-width-input">Stroke Width (px):</label>
+    <input type="number" id="stroke-width-input" value="0" min="0" step="0.5">
+  </div>
+
+  <div class="preview" id="preview" style="display: none;">
+    Hello World
+  </div>
+
+  <button id="back-button">Back to Logo Selection</button>
+  <button id="download-button">Download Logo</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
